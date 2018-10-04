@@ -1,0 +1,8 @@
+public class testlightening {
+   
+    @AuraEnabled
+    public static List<Contact> getContacts() {
+        return [SELECT AccountId,FirstName,LastName FROM Contact];
+    }
+
+}
